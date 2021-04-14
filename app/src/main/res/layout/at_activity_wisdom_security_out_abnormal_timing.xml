@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_F5F5F5"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_add_out_time" />
+
+    <RelativeLayout
+        android:id="@+id/rl_repeat"
+        android:layout_width="match_parent"
+        android:layout_height="156px"
+        android:layout_marginTop="24px"
+        android:background="@drawable/at_selector_ffffff_cfcfcf">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="42px"
+            android:text="@string/at_repeat"
+            android:textColor="@color/_333333"
+            android:textSize="42px" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="42px"
+            android:src="@drawable/basic_all_icon_unfold_normal" />
+
+        <TextView
+            android:id="@+id/tv_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="180px"
+            android:layout_marginRight="126px"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="每天"
+            android:textColor="@color/_999999"
+            android:textSize="42px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_begin"
+        android:layout_width="match_parent"
+        android:layout_height="156px"
+        android:layout_marginTop="24px"
+        android:background="@drawable/at_selector_ffffff_cfcfcf">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="42px"
+            android:text="@string/at_begin"
+            android:textColor="@color/_333333"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/tv_begin_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="42px"
+            android:text="@string/at_0_o_clock"
+            android:textColor="@color/_599BFF"
+            android:textSize="42px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="42px"
+        android:layout_height="3px"
+        android:background="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/rl_end"
+        android:layout_width="match_parent"
+        android:layout_height="156px"
+        android:background="@drawable/at_selector_ffffff_cfcfcf">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="42px"
+            android:text="@string/at_end"
+            android:textColor="@color/_333333"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/tv_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="42px"
+            android:text="@string/at_24_o_clock"
+            android:textColor="@color/_599BFF"
+            android:textSize="42px" />
+    </RelativeLayout>
+</LinearLayout>

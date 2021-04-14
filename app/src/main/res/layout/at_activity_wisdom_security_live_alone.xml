@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        app:bartext="@string/at_solitary_elderly_care_subscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45px"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_statement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:drawableLeft="@drawable/at_selector_checkbox"
+            android:drawablePadding="24px"
+            android:gravity="center_vertical"
+            android:text="@string/at_accept_the_service_subscription_agreement"
+            android:textSize="39px"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="960px"
+            android:layout_height="135px"
+            android:layout_marginTop="33px"
+            android:background="@drawable/at_selector_150px_1478c8_005395"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="45px" />
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_bottom"
+        android:layout_below="@id/titlebar"
+        app:srlAccentColor="@android:color/white"
+        app:srlPrimaryColor="#444444">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="45px"
+            android:paddingRight="45px"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/at_please_set"
+                    android:textColor="@color/_333333"
+                    android:textSize="66px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_subscriber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/_999999"
+                    android:textSize="48px"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="240px"
+                android:layout_marginTop="27px"
+                android:background="@color/_484F54"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="40px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/at_service_object"
+                    android:textColor="@color/white"
+                    android:textSize="48px" />
+
+                <TextView
+                    android:id="@+id/tv_day_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120px"
+                    android:layout_margin="15px"
+                    android:background="@drawable/at_shape_9px_ffffff"
+                    android:gravity="right|center_vertical"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:paddingLeft="39px"
+                    android:paddingRight="39px"
+                    android:text="3"
+                    android:textColor="@color/_333333"
+                    android:textSize="66px"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_day"
+                    android:layout_width="141px"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textSize="66px"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/at_days_did_not_go_out_for_care_reminder"
+                    android:textColor="@color/white"
+                    android:textSize="48px" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="240px"
+                android:layout_marginTop="24px"
+                android:background="@color/_F5F5F5"
+                android:paddingLeft="45px"
+                android:paddingRight="45px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/at_whether_to_enable_property_care"
+                    android:textColor="@color/_333333"
+                    android:textSize="48px" />
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="48px"
+                    android:visibility="gone" />
+
+                <com.aliyun.ayland.widget.ATSwitchButton
+                    android:id="@+id/switchButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:kswBackDrawable="@drawable/at_selector_66px_6pxf7f7f7_ffffff_1478c8"
+                    app:kswThumbDrawable="@drawable/ksw_md_thumb2"
+                    app:kswThumbHeight="@dimen/ksw_md_thumb_solid_inset1"
+                    app:kswThumbMarginBottom="-13dp"
+                    app:kswThumbMarginLeft="-13dp"
+                    app:kswThumbMarginRight="-13dp"
+                    app:kswThumbMarginTop="-13dp"
+                    app:kswThumbRangeRatio="1.45"
+                    app:kswThumbWidth="@dimen/ksw_md_thumb_ripple_size1"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_record"
+                android:layout_width="match_parent"
+                android:layout_height="240px"
+                android:layout_marginTop="24px"
+                android:background="@color/_F5F5F5"
+                android:paddingLeft="45px"
+                android:paddingRight="45px"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/at_the_service_object_has_no_reminder_record"
+                    android:textColor="@color/_333333"
+                    android:textSize="48px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/basic_all_icon_unfold_normal" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="45px"
+                android:text="@string/at_wisdom_security_tip1"
+                android:textColor="@color/_666666"
+                android:textSize="39px" />
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</RelativeLayout>

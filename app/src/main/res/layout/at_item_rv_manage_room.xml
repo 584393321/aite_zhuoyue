@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="158px"
+        android:background="@drawable/at_selector_ffffff_e0e0e0"
+        android:paddingLeft="42px"
+        android:paddingRight="42px">
+
+        <TextView
+            android:id="@+id/tv_room_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/_333333"
+            android:textSize="48px" />
+
+        <ImageView
+            android:id="@+id/img_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/jump" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/_F1F1F1" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_add_room"
+        android:layout_width="match_parent"
+        android:layout_height="156px"
+        android:layout_marginTop="60px"
+        android:background="@drawable/at_selector_ffffff_e0e0e0"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="54px"
+            android:drawableLeft="@drawable/common_icon_add_n"
+            android:drawablePadding="18px"
+            android:gravity="center"
+            android:text="@string/at_add_room"
+            android:textColor="@color/_1478C8"
+            android:textSize="48px" />
+    </LinearLayout>
+</LinearLayout>

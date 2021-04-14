@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="168px"
+    android:layout_marginBottom="18px"
+    android:layout_marginLeft="42px"
+    android:layout_marginRight="42px"
+    android:layout_marginTop="18px"
+    android:background="@drawable/at_selector_12px_ffffff_e6e6e6">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="90px"
+        android:layout_height="90px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="48px" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="198px"
+        android:maxWidth="590px"
+        android:textColor="@color/_333333"
+        android:textSize="45px" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20px"
+        android:src="@drawable/btn_jump_h" />
+
+    <TextView
+        android:id="@+id/tv_off_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="91px"
+        android:background="@drawable/at_shape_12px_e85d3e"
+        android:paddingBottom="2px"
+        android:paddingLeft="18px"
+        android:paddingRight="18px"
+        android:paddingTop="2px"
+        android:text="@string/at_off_line"
+        android:textColor="@color/_E85D3E"
+        android:textSize="36px" />
+</RelativeLayout>

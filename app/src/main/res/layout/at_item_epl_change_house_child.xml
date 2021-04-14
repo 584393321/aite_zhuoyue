@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="45px"
+    android:paddingRight="45px"
+    android:paddingBottom="30px">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="210px"
+        android:background="@drawable/at_shape_18px_3pxeeeeee_fdfdfd">
+
+        <ImageView
+            android:id="@+id/img_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60px"
+            android:src="@drawable/common_icon_xuanzhe_s"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_house_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="45px"
+            android:layout_marginRight="45px"
+            android:layout_toLeftOf="@id/img_select"
+            android:textSize="42px" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120px"
+    android:layout_height="120px"
+    android:layout_marginLeft="3px"
+    android:layout_marginRight="3px"
+    android:layout_marginTop="7px"
+    android:background="@drawable/at_selector_14px_3pxe2e2e2_ffffff_b4b4b4">
+
+    <com.aliyun.ayland.widget.ATDrawableTextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/at_selector_14px_3pxe2e2e2_ffffff_b4b4b4"
+        android:gravity="center"
+        android:textColor="@color/textcolor_selector_park_nu"
+        android:textSize="42px"/>
+</LinearLayout>

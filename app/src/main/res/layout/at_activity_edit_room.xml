@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_F5F5F5"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_edit_room" />
+
+    <com.aliyun.ayland.widget.ATObservableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/_F5F5F5"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_room_pic"
+                android:layout_width="match_parent"
+                android:layout_height="152px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/at_selector_ffffff_e0e0e0"
+                android:clickable="true"
+                android:paddingLeft="42px"
+                android:paddingRight="42px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/at_room_pic"
+                    android:textColor="@color/_333333"
+                    android:textSize="42px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/jump" />
+
+                <TextView
+                    android:id="@+id/tv_room_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="84px"
+                    android:textColor="@color/_999999"
+                    android:textSize="42px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/_F1F1F1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:background="@drawable/at_selector_ffffff_e0e0e0"
+                android:clickable="true"
+                android:paddingLeft="42px">
+
+                <TextView
+                    android:id="@+id/tv_room_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/at_room_name"
+                    android:textColor="@color/_333333"
+                    android:textSize="42px" />
+
+                <EditText
+                    android:id="@+id/et_room_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50px"
+                    android:layout_toRightOf="@id/tv_room_name"
+                    android:background="@null"
+                    android:gravity="end|center_vertical"
+                    android:hint="@string/at_input_room_name"
+                    android:maxLength="4"
+                    android:paddingEnd="42px"
+                    android:textColor="@color/_333333"
+                    android:textSize="42px" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24px"
+                android:background="@color/white"
+                android:paddingBottom="33px"
+                android:paddingLeft="42px"
+                android:paddingTop="45px"
+                android:text="绑定设备"
+                android:textColor="@color/_333333"
+                android:textSize="45px" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_room_device"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_house_device"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:background="@color/white" />
+        </LinearLayout>
+
+    </com.aliyun.ayland.widget.ATObservableScrollView>
+</LinearLayout>

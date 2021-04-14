@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_F1F1F1"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_visitor_appoint" />
+
+    <com.aliyun.ayland.widget.ATObservableScrollView
+        android:id="@+id/observableScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30px"
+                android:background="@color/_F1F1F1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="45px"
+                android:paddingRight="39px">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="306px">
+
+                    <LinearLayout
+                        android:layout_width="750px"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150px">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="@string/at_visitor_name"
+                                android:textColor="@color/_333333"
+                                android:textSize="45px" />
+
+                            <EditText
+                                android:id="@+id/et_visitor_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:gravity="center_vertical|end"
+                                android:hint="@string/at_please_input"
+                                android:maxLength="10"
+                                android:textColor="@color/_333333"
+                                android:textColorHint="@color/_DDDDDD"
+                                android:textSize="45px" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3px"
+                            android:background="@drawable/at_shape_3px_333333_xu"
+                            android:layerType="software" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150px">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="@string/at_phone3"
+                                android:textColor="@color/_333333"
+                                android:textSize="45px" />
+
+                            <EditText
+                                android:id="@+id/et_visitor_phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:gravity="center_vertical|end"
+                                android:hint="@string/at_please_input"
+                                android:maxLength="11"
+                                android:textColor="@color/_333333"
+                                android:textColorHint="@color/_DDDDDD"
+                                android:textSize="45px" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/at_shape_3px_333333_xu" />
+
+                    <View
+                        android:layout_width="2px"
+                        android:layout_height="216px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="165px"
+                        android:background="@color/_F1F1F1" />
+
+                    <TextView
+                        android:id="@+id/tv_contact"
+                        android:layout_width="204px"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="6px"
+                        android:background="@drawable/at_selector_ffffff_cfcfcf"
+                        android:drawablePadding="15px"
+                        android:drawableTop="@drawable/icon_addressbook"
+                        android:gravity="center"
+                        android:paddingBottom="45px"
+                        android:paddingTop="45px"
+                        android:text="@string/at_address_book"
+                        android:textColor="@color/_1478C8"
+                        android:textSize="36px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_visitor_room"
+                    android:layout_width="match_parent"
+                    android:layout_height="153px"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/at_visit_room"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <TextView
+                        android:id="@+id/tv_visite_room"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="21px"
+                        android:drawableRight="@drawable/basic_all_icon_unfold_normal"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="@string/at_select_visit_room"
+                        android:textColor="@color/_666666"
+                        android:textSize="45px" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="@drawable/at_shape_3px_333333_xu" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_owner"
+                    android:layout_width="match_parent"
+                    android:layout_height="153px"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/at_visit_owner"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <TextView
+                        android:id="@+id/tv_owner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="21px"
+                        android:drawableRight="@drawable/basic_all_icon_unfold_normal"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="@string/at_select_visite_owner"
+                        android:textColor="@color/_666666"
+                        android:textSize="45px" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="@drawable/at_shape_3px_333333_xu" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_visite_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="153px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/at_visit_time"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <TextView
+                        android:id="@+id/tv_visite_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="21px"
+                        android:drawableRight="@drawable/basic_all_icon_unfold_normal"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="@string/at_select_visit_time"
+                        android:textColor="@color/_666666"
+                        android:textSize="45px" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="@drawable/at_shape_3px_333333_xu" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_leave_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="153px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/at_leave_time"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <TextView
+                        android:id="@+id/tv_leave_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="21px"
+                        android:drawableRight="@drawable/basic_all_icon_unfold_normal"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="@string/at_select_leave_time"
+                        android:textColor="@color/_666666"
+                        android:textSize="45px" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="@drawable/at_shape_3px_333333_xu" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/at_is_motors"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_motors"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_motors_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:drawablePadding="15px"
+                            android:drawableRight="@drawable/at_selector_checkbox"
+                            android:gravity="center"
+                            android:text="@string/at_yes"
+                            android:textColor="@color/_666666"
+                            android:textSize="45px" />
+
+                        <RadioButton
+                            android:id="@+id/rb_motors_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="114px"
+                            android:button="@null"
+                            android:drawablePadding="15px"
+                            android:drawableRight="@drawable/at_selector_checkbox"
+                            android:gravity="center"
+                            android:text="@string/at_no"
+                            android:textColor="@color/_666666"
+                            android:textSize="45px" />
+                    </RadioGroup>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_plate"
+                    android:layout_width="match_parent"
+                    android:layout_height="153px"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:background="@drawable/at_shape_3px_333333_xu" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/at_plate_number"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <TextView
+                        android:id="@+id/tv_plate_numbers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="21px"
+                        android:drawableRight="@drawable/basic_all_icon_unfold_normal"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:text="@string/at_input_plate_number"
+                        android:textColor="@color/_DDDDDD"
+                        android:textSize="45px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_park"
+                    android:layout_width="match_parent"
+                    android:layout_height="153px"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:background="@drawable/at_shape_3px_333333_xu" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/at_park"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <TextView
+                        android:id="@+id/tv_visite_park"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="21px"
+                        android:drawableRight="@drawable/basic_all_icon_unfold_normal"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:text="@string/at_select_park"
+                        android:textColor="@color/_DDDDDD"
+                        android:textSize="45px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_park_fee"
+                    android:layout_width="match_parent"
+                    android:layout_height="153px"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:background="@drawable/at_shape_3px_333333_xu" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/at_will_pay_for_visitor"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_park_fee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_park_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:drawablePadding="15px"
+                            android:drawableRight="@drawable/at_selector_checkbox"
+                            android:gravity="center"
+                            android:text="@string/at_yes"
+                            android:textColor="@color/_666666"
+                            android:textSize="45px" />
+
+                        <RadioButton
+                            android:id="@+id/rb_park_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="114px"
+                            android:button="@null"
+                            android:drawablePadding="15px"
+                            android:drawableRight="@drawable/at_selector_checkbox"
+                            android:gravity="center"
+                            android:text="@string/at_no"
+                            android:textColor="@color/_666666"
+                            android:textSize="45px" />
+                    </RadioGroup>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_read"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/at_selector_checkbox1"
+                android:gravity="center"
+                android:drawablePadding="3px"
+                android:layout_marginTop="72px"
+                android:text="@string/at_accept_agreement"
+                android:textColor="@color/_999999"
+                android:textSize="36px" />
+
+            <Button
+                android:id="@+id/btn_subscribe"
+                android:layout_width="960px"
+                android:layout_height="132px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="400px"
+                android:layout_marginTop="33px"
+                android:background="@drawable/at_shape_66px_aaaaaa"
+                android:gravity="center"
+                android:text="@string/at_make_appointment"
+                android:textColor="@color/white"
+                android:textSize="48px" />
+        </LinearLayout>
+    </com.aliyun.ayland.widget.ATObservableScrollView>
+</LinearLayout>

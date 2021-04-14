@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="213px"
+    android:layout_marginBottom="24px"
+    android:background="@drawable/at_shape_21px_f5f5f5">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="48px"
+        android:textColor="@color/_666666"
+        android:textSize="54px" />
+
+    <TextView
+        android:id="@+id/tv_subscribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="105px"
+        android:layout_centerVertical="true"
+        android:text="@string/at_subscribe1"
+        android:textColor="@color/_1478C8"
+        android:textSize="45px" />
+</RelativeLayout>

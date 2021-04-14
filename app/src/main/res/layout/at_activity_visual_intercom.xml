@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_visual_intercom" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="@android:color/white"
+        app:srlPrimaryColor="#444444">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42px"
+                android:layout_marginRight="42px"
+                android:layout_marginTop="30px"
+                android:orientation="vertical"
+                android:background="@color/_484F54">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="204px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="42px"
+                        android:text="@string/at_whether_voice_intercom_is_enabled"
+                        android:textColor="@color/white"
+                        android:textSize="60px"
+                        android:textStyle="bold" />
+
+                    <com.aliyun.ayland.widget.ATSwitchButton
+                        android:id="@+id/switchview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="40px"
+                        android:checked="false"
+                        android:clickable="false"
+                        android:padding="15px"
+                        app:kswBackDrawable="@drawable/at_selector_30px_ffffff_1478c8"
+                        app:kswThumbDrawable="@drawable/ksw_md_thumb2"
+                        app:kswThumbHeight="@dimen/ksw_md_thumb_solid_inset1"
+                        app:kswThumbMarginBottom="-13dp"
+                        app:kswThumbMarginLeft="-13dp"
+                        app:kswThumbMarginRight="-13dp"
+                        app:kswThumbMarginTop="-13dp"
+                        app:kswThumbRangeRatio="1.45"
+                        app:kswThumbWidth="@dimen/ksw_md_thumb_ripple_size1" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="204px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="42px"
+                        android:text="@string/at_whether_open_housekeeper_transfer"
+                        android:textColor="@color/white"
+                        android:textSize="60px"
+                        android:textStyle="bold" />
+
+                    <com.aliyun.ayland.widget.ATSwitchButton
+                        android:id="@+id/switchview_transfer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="40px"
+                        android:checked="false"
+                        android:clickable="false"
+                        android:padding="15px"
+                        app:kswBackDrawable="@drawable/at_selector_30px_ffffff_1478c8"
+                        app:kswThumbDrawable="@drawable/ksw_md_thumb2"
+                        app:kswThumbHeight="@dimen/ksw_md_thumb_solid_inset1"
+                        app:kswThumbMarginBottom="-13dp"
+                        app:kswThumbMarginLeft="-13dp"
+                        app:kswThumbMarginRight="-13dp"
+                        app:kswThumbMarginTop="-13dp"
+                        app:kswThumbRangeRatio="1.45"
+                        app:kswThumbWidth="@dimen/ksw_md_thumb_ripple_size1" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42px"
+                    android:text="@string/at_voice_intercom_open_tip"
+                    android:textColor="@color/_EEEEEE"
+                    android:layout_marginBottom="45px"
+                    android:textSize="36px" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42px"
+                android:layout_marginTop="90px"
+                android:drawableLeft="@drawable/at_shape_3px_18px45px_1478c8"
+                android:drawablePadding="9px"
+                android:gravity="center"
+                android:text="@string/at_voice_intercom_record"
+                android:textColor="@color/_333333"
+                android:textSize="42px" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12px" />
+
+            <TextView
+                android:id="@+id/tv_none"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="275px"
+                android:text="@string/at_have_none_voice_intercom_record"
+                android:textColor="@color/_999999"
+                android:textSize="42px"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

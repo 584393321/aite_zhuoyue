@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/_F5F5F5"
+        android:orientation="vertical">
+
+        <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+            android:id="@+id/titlebar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bartext="@string/at_choose"
+            app:show_ib="true" />
+
+        <RelativeLayout
+            android:id="@+id/rl_trigger_timing"
+            android:layout_width="match_parent"
+            android:layout_height="672px"
+            android:layout_marginTop="20px"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/rl_timing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/tv_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="899px"
+                android:paddingTop="20px"
+                android:text="分"
+                android:textColor="@color/_333333"
+                android:textSize="42px" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_tca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:background="@color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_delay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42px"
+            android:layout_marginTop="40px"
+            android:text="@string/at_do_after_done"
+            android:textColor="@color/_999999"
+            android:textSize="36px"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_delay"
+            android:layout_width="match_parent"
+            android:layout_height="169px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/at_selector_ffffff_cfcfcf"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="69px"
+                android:text="@string/at_delay_perform"
+                android:textColor="@color/_333333"
+                android:textSize="45px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:src="@drawable/btn_jump_h" />
+
+            <TextView
+                android:id="@+id/tv_delay_perform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="164px"
+                android:text="@string/at_perform_now"
+                android:textColor="@color/_EAA520"
+                android:textSize="45px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_delay_popup"
+            android:layout_width="match_parent"
+            android:layout_height="672px"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/rl_delay_popup1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="600px"
+                android:paddingTop="20px"
+                android:text="秒"
+                android:textColor="@color/_333333"
+                android:textSize="42px" />
+        </RelativeLayout>
+    </LinearLayout>

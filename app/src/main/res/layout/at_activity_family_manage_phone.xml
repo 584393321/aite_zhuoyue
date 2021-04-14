@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:bartext="@string/at_regist_family_member" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45px"
+        android:layout_marginTop="27px"
+        android:text="@string/at_please_input_family_member_phone"
+        android:textColor="@color/_333333"
+        android:textSize="72px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45px"
+        android:layout_marginRight="45px"
+        android:layout_marginTop="42px"
+        android:lineSpacingExtra="10px"
+        android:text="@string/at_please_input_family_member_phone1"
+        android:textColor="@color/_999999"
+        android:textSize="42px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="168px"
+        android:layout_marginLeft="42px"
+        android:layout_marginRight="42px"
+        android:layout_marginTop="72px"
+        android:background="@drawable/at_shape_15px_3pxdddddd_f7f7f7"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45px"
+            android:layout_marginRight="45px"
+            android:text="@string/at_please_input_family_member_phone2"
+            android:textColor="@color/_333333"
+            android:textSize="54px" />
+
+        <View
+            android:layout_width="3px"
+            android:layout_height="96px"
+            android:background="@color/_EEEEEE" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/at_text_import_phonenumber"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingLeft="45px"
+            android:textColor="@color/_333333"
+            android:textColorHint="@color/_DDDDDD"
+            android:textSize="54px" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_no_phone"
+        android:layout_width="match_parent"
+        android:layout_height="168px"
+        android:layout_marginLeft="42px"
+        android:layout_marginRight="42px"
+        android:layout_marginTop="21px"
+        android:background="@drawable/at_selector_15px_3pxdddddd_f7f7f7">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableRight="@drawable/btn_jump_h"
+            android:gravity="center_vertical"
+            android:text="@string/at_please_input_family_member_phone3"
+            android:textColor="@color/_1478C8"
+            android:textSize="45px" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="960px"
+        android:layout_height="132px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="198px"
+        android:background="@drawable/at_selector_66px_1478c8_005395"
+        android:gravity="center"
+        android:text="@string/at_next"
+        android:textColor="@color/white"
+        android:textSize="48px" />
+</LinearLayout>

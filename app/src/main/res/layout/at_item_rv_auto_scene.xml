@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="256px"
+    android:layout_marginBottom="54px"
+    android:layout_marginLeft="42px"
+    android:layout_marginRight="42px"
+    android:background="@drawable/at_selector_18px_b3ffffff_fcf8ef">
+
+    <ImageView
+        android:id="@+id/img_scene"
+        android:layout_width="90px"
+        android:layout_height="90px"
+        android:layout_marginLeft="42px"
+        android:layout_marginTop="90px" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="182px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/_584F42"
+            android:textSize="48px" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="42px"
+        android:paddingRight="42px">
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="132px"
+            android:layout_height="132px"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_s_ld_shoudongkaiqi"
+            android:visibility="gone" />
+
+        <com.aliyun.ayland.widget.ATCircleLoadingAnimotion
+            android:id="@+id/circle_bar"
+            android:layout_width="132px"
+            android:layout_height="132px"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            app:bar_width="5px" />
+
+        <ImageView
+            android:id="@+id/img_start_success"
+            android:layout_width="132px"
+            android:layout_height="132px"
+            android:layout_centerInParent="true"
+            android:src="@drawable/scene_success"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <!--<com.aliyun.ayland.widget.SwitchView-->
+    <!--android:id="@+id/switchview"-->
+    <!--android:layout_width="132px"-->
+    <!--android:layout_height="132px"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginRight="42px"-->
+    <!--android:visibility="gone"-->
+    <!--app:hasShadow="false"-->
+    <!--app:isOpened="true" />-->
+
+    <com.aliyun.ayland.widget.ATSwitchButton
+        android:id="@+id/switchview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="42px"
+        app:kswBackColor="@color/ksw_md_back_color"
+        app:kswThumbDrawable="@drawable/ksw_md_thumb"
+        app:kswThumbHeight="@dimen/ksw_md_thumb_ripple_size"
+        app:kswThumbMarginBottom="-14dp"
+        app:kswThumbMarginLeft="-16dp"
+        app:kswThumbMarginRight="-16dp"
+        app:kswThumbMarginTop="-14dp"
+        app:kswThumbRangeRatio="1.45"
+        app:kswThumbWidth="@dimen/ksw_md_thumb_ripple_size" />
+</RelativeLayout>

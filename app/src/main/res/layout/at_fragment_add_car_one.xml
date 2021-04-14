@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="1116px"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90px"
+        android:text="@string/at_upload_the_license_tip"
+        android:textColor="@color/_666666"
+        android:textSize="45px" />
+
+    <ImageView
+        android:id="@+id/img_add_picture"
+        android:layout_width="900px"
+        android:layout_height="642px"
+        android:layout_centerInParent="true"
+        android:background="@drawable/home_bg_fkyy_jiashizheng" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="27px"
+        android:drawableTop="@drawable/ic_scjsz"
+        android:text="@string/at_upload_the_license"
+        android:textSize="48px"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img_add_picture_ok"
+        android:layout_width="900px"
+        android:layout_height="642px"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

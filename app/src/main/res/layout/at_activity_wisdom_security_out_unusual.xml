@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_go_out_abnormal_subscribe" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45px"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_statement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/at_selector_checkbox"
+            android:layout_marginTop="15px"
+            android:drawablePadding="24px"
+            android:gravity="center_vertical"
+            android:text="@string/at_accept_the_service_subscription_agreement"
+            android:textSize="39px" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="960px"
+            android:layout_height="135px"
+            android:layout_marginTop="33px"
+            android:background="@drawable/at_selector_150px_1478c8_005395"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="45px" />
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_bottom"
+        android:layout_below="@id/titlebar"
+        app:srlAccentColor="@android:color/white"
+        app:srlPrimaryColor="#444444">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.aliyun.ayland.widget.ATObservableScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="45px"
+                android:paddingRight="45px">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/at_please_set"
+                        android:textColor="@color/_333333"
+                        android:textSize="66px"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_subscriber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="24px"
+                        android:textColor="@color/_999999"
+                        android:textSize="48px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="240px"
+                    android:layout_marginTop="27px"
+                    android:background="@color/_F5F5F5"
+                    android:paddingLeft="45px"
+                    android:paddingRight="45px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/at_whether_to_enable_property_care"
+                        android:textColor="@color/_333333"
+                        android:textSize="48px" />
+
+                    <TextView
+                        android:id="@+id/tv_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="48px" />
+
+                    <com.aliyun.ayland.widget.ATSwitchButton
+                        android:id="@+id/switchButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone"
+                        app:kswBackDrawable="@drawable/at_selector_66px_6pxf7f7f7_ffffff_1478c8"
+                        app:kswThumbDrawable="@drawable/ksw_md_thumb2"
+                        app:kswThumbHeight="@dimen/ksw_md_thumb_solid_inset1"
+                        app:kswThumbMarginBottom="-13dp"
+                        app:kswThumbMarginLeft="-13dp"
+                        app:kswThumbMarginRight="-13dp"
+                        app:kswThumbMarginTop="-13dp"
+                        app:kswThumbRangeRatio="1.45"
+                        app:kswThumbWidth="@dimen/ksw_md_thumb_ripple_size1" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="27px"
+                    android:background="@color/_F5F5F5"
+                    android:orientation="vertical"
+                    android:paddingLeft="45px"
+                    android:paddingRight="45px">
+
+                    <LinearLayout
+                        android:id="@+id/ll_has"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="30px"
+                        android:paddingTop="30px"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="@string/at_family_members_with_faces_recorded"
+                                android:textColor="@color/_666666"
+                                android:textSize="39px" />
+
+                            <TextView
+                                android:id="@+id/tv_family_manage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/at_selector_39px_1478c8_005395"
+                                android:gravity="center"
+                                android:paddingBottom="12px"
+                                android:paddingLeft="24px"
+                                android:paddingRight="24px"
+                                android:paddingTop="12px"
+                                android:text="@string/at_family_member_management"
+                                android:textColor="@color/white"
+                                android:textSize="45px" />
+                        </RelativeLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_none"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="100px"
+                        android:paddingTop="100px"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/at_family_members_with_faces_recorded_tip"
+                            android:textColor="@color/_333333"
+                            android:textSize="39px" />
+
+                        <TextView
+                            android:id="@+id/tv_to_family_manage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="36px"
+                            android:drawableRight="@drawable/common_icon_fanhui_y"
+                            android:gravity="center_vertical"
+                            android:text="@string/at_go_to_family_manage"
+                            android:textColor="@color/_1478C8"
+                            android:textSize="48px" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_count_from_the_community"
+                    android:layout_width="match_parent"
+                    android:layout_height="240px"
+                    android:layout_marginTop="27px"
+                    android:background="@color/_F5F5F5"
+                    android:paddingLeft="45px"
+                    android:paddingRight="45px"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/at_count_from_the_community1"
+                            android:textColor="@color/_333333"
+                            android:textSize="48px" />
+
+                        <TextView
+                            android:id="@+id/tv_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/_FF5656"
+                            android:textSize="48px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/at_count_from_the_community3"
+                            android:textColor="@color/_333333"
+                            android:textSize="48px" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/basic_all_icon_unfold_normal" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="45px"
+                    android:text="@string/at_wisdom_security_tip3"
+                    android:textColor="@color/_666666"
+                    android:textSize="39px" />
+            </LinearLayout>
+        </com.aliyun.ayland.widget.ATObservableScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</RelativeLayout>

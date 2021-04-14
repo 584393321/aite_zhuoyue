@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="area_array">
+        <item>@string/at_china</item>
+        <item>@string/at_Macau</item>
+        <item>@string/at_HK</item>
+        <item>@string/at_Taiwan</item>
+        <item>@string/at_Australia</item>
+        <item>@string/at_Canada</item>
+        <item>@string/at_France</item>
+        <item>@string/at_Deutschland</item>
+        <item>@string/at_india</item>
+        <item>@string/at_Italy</item>
+        <item>@string/at_Malaysia</item>
+        <item>@string/at_Singapore</item>
+        <item>@string/at_South_Korea</item>
+        <item>@string/at_Thailand</item>
+        <item>@string/at_United_States</item>
+    </string-array>
+    <string-array name="area_code">
+        <item>86</item>
+        <item>853</item>
+        <item>852</item>
+        <item>886</item>
+        <item>61</item>
+        <item>1</item>
+        <item>33</item>
+        <item>49</item>
+        <item>91</item>
+        <item>39</item>
+        <item>60</item>
+        <item>65</item>
+        <item>82</item>
+        <item>66</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="tab_titles">
+        <item>首页</item>
+        <item>通行</item>
+<!--        <item>智慧</item>-->
+        <!--<item>缴费</item>-->
+        <item>我的</item>
+    </string-array>
+    <string-array name="weekday">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+    <string-array name="every_weekday">
+        <item>每周日</item>
+        <item>每周一</item>
+        <item>每周二</item>
+        <item>每周三</item>
+        <item>每周四</item>
+        <item>每周五</item>
+        <item>每周六</item>
+        <item>每天</item>
+    </string-array>
+    <string-array name="monitor_titles">
+        <item>监控画面</item>
+        <item>保存记录</item>
+        <item>监控记录</item>
+    </string-array>
+    <string-array name="tab_face_manage">
+        <item>小区权限</item>
+        <item>使用记录</item>
+    </string-array>
+    <string-array name="wy_public_space_record">
+        <item>待处理</item>
+        <item>已处理</item>
+    </string-array>
+    <string-array name="visite_appoint_record">
+        <item>预邀请记录</item>
+        <item>访客预约记录</item>
+    </string-array>
+    <string-array name="tab_space_subscribe">
+        <item>空中花园</item>
+        <item>健身房</item>
+        <item>会所</item>
+    </string-array>
+    <string-array name="environmental_data">
+        <item>室外天气</item>
+        <item>室内天气</item>
+    </string-array>
+    <string-array name="tab_access_record">
+        <item>人行</item>
+        <item>车行</item>
+    </string-array>
+    <string-array name="tab_discover_device_titles">
+        <item>云端设备</item>
+        <item>本地设备</item>
+    </string-array>
+    <string-array name="room_type">
+        <item>chufang</item>
+        <item>keting</item>
+        <item>yangtai</item>
+        <item>weishengjian</item>
+        <item>xuanguan</item>
+        <item>canting</item>
+        <item>woshi</item>
+        <item>kid</item>
+        <item>baomu</item>
+        <item>shufang</item>
+        <item>yimaojian</item>
+        <item>commonly</item>
+    </string-array>
+    <string-array name="tagKey">
+        <item>TRIGGER</item>
+        <item>CONDITION</item>
+        <item>ACTION</item>
+    </string-array>
+    <string-array name="tab_vehicle_passage">
+        <item>我家的车</item>
+        <item>通行记录</item>
+    </string-array>
+</resources>

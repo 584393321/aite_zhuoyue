@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="156px"
+    android:layout_marginTop="24px">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/_333333"
+        android:textSize="48px" />
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:textSize="48px" />
+
+    <com.aliyun.ayland.widget.ATSwitchButton
+        android:id="@+id/switchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:kswBackDrawable="@drawable/at_selector_66px_6pxf7f7f7_ffffff_1478c8"
+        app:kswThumbDrawable="@drawable/ksw_md_thumb2"
+        app:kswThumbHeight="@dimen/ksw_md_thumb_solid_inset1"
+        app:kswThumbMarginBottom="-13dp"
+        app:kswThumbMarginLeft="-13dp"
+        app:kswThumbMarginRight="-13dp"
+        app:kswThumbMarginTop="-13dp"
+        app:kswThumbRangeRatio="1.45"
+        app:kswThumbWidth="@dimen/ksw_md_thumb_ripple_size1"
+        android:visibility="gone"/>
+</RelativeLayout>

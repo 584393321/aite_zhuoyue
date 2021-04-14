@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="855px"
+        android:layout_height="546px"
+        android:layout_centerInParent="true"
+        android:background="@drawable/at_shape_15px_ffffff">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="747px"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="135px"
+            android:textColor="@color/_333333"
+            android:textSize="54px" />
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="315px"
+            android:layout_height="111px"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="75px"
+            android:text="@string/at_sure1"
+            android:background="@drawable/at_selector_56px_3px1478c8_ffffff_eef4f8"
+            android:textColor="@color/_1478C8"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="315px"
+            android:layout_height="111px"
+            android:background="@drawable/at_selector_56px_1478c8_005395"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="75px"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="@string/at_cancel"
+            android:textColor="@color/white"
+            android:textSize="45px" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="240px"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="90px"
+        android:layout_height="90px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="45px"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="63px"
+        android:layout_marginTop="57px"
+        android:layout_marginLeft="177px"
+        android:textColor="@color/_333333"
+        android:textSize="45px"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="50px"
+        android:layout_marginTop="129px"
+        android:layout_marginLeft="177px"
+        android:textColor="@color/_999999"
+        android:textSize="36px"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="59px"
+        android:layout_marginTop="60px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="42px"
+        android:textColor="@color/_EBB080"
+        android:textSize="42px"
+        android:gravity="right"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_marginLeft="43px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/_EEEEEE" />
+</RelativeLayout>

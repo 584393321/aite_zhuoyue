@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_content"
+    android:layout_width="996px"
+    android:layout_height="192px"
+    android:layout_marginTop="30px"
+    android:layout_marginLeft="42px"
+    android:orientation="horizontal"
+    android:background="@drawable/at_shape_12px_ffffff">
+
+    <LinearLayout
+        android:layout_width="750px"
+        android:layout_marginLeft="42px"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="陈红红"
+            android:textSize="55px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25px"
+            android:text="[老人]"
+            android:textColor="#A6A6AA"
+            android:textSize="40px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="45px"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.aliyun.ayland.widget.ATSwitchButton
+            android:id="@+id/switchview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="21px"
+            android:layout_gravity="center_vertical"
+            app:kswBackColor="@color/ksw_md_back_color"
+            app:kswThumbDrawable="@drawable/ksw_md_thumb"
+            app:kswThumbHeight="@dimen/ksw_md_thumb_ripple_size"
+            app:kswThumbMarginBottom="-14dp"
+            app:kswThumbMarginLeft="-16dp"
+            app:kswThumbMarginRight="-16dp"
+            app:kswThumbMarginTop="-14dp"
+            app:kswThumbRangeRatio="1.45"
+            app:kswThumbWidth="@dimen/ksw_md_thumb_ripple_size" />
+    </LinearLayout>
+</RelativeLayout>

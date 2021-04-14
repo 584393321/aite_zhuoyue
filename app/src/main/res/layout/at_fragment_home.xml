@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/toolbar_padding_top">
+
+        <TextView
+            android:id="@+id/tv_wisdom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawablePadding="27px"
+            android:drawableRight="@drawable/zhihui_ico_wodeguanli"
+            android:gravity="center_vertical"
+            android:padding="45px"
+            android:text="@string/at_wisdom"
+            android:textColor="@color/_333333"
+            android:textSize="72px"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="45px"
+            android:src="@drawable/ico_huidaoshouye" />
+    </RelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="@color/_F5F5F5"
+        app:srlPrimaryColor="#444444">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_has"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/ll_weather"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="42px"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/img_begin"
+                                android:layout_width="96px"
+                                android:layout_height="96px"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/img_to"
+                                android:layout_width="63px"
+                                android:layout_height="63px"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/ic_s_tianqi_guodu"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/img_end"
+                                android:layout_width="96px"
+                                android:layout_height="96px"
+                                android:src="@drawable/at_weather_01" />
+
+                            <TextView
+                                android:id="@+id/tv_weather"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="18px"
+                                android:text="多云"
+                                android:textColor="@color/_333333"
+                                android:textSize="42px" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_outside"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30px"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="54px">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/zhihui_ico_shiwai"
+                                android:drawablePadding="9px"
+                                android:text="@string/at_outside"
+                                android:textColor="@color/_666666"
+                                android:textSize="30px" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60px"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_outside_temp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:textColor="@color/_666666"
+                                    android:textSize="30px" />
+
+                                <TextView
+                                    android:id="@+id/tv_wind"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:textColor="@color/_666666"
+                                    android:textSize="30px" />
+
+                                <TextView
+                                    android:id="@+id/tv_pm"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:textColor="@color/_666666"
+                                    android:textSize="30px" />
+
+                                <TextView
+                                    android:id="@+id/tv_tvoc1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:textColor="@color/_666666"
+                                    android:textSize="30px" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30px"
+                            android:paddingLeft="54px">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawableLeft="@drawable/zhihui_ico_shinei"
+                                    android:drawablePadding="9px"
+                                    android:text="@string/at_inside"
+                                    android:textColor="@color/_666666"
+                                    android:textSize="30px" />
+
+                                <LinearLayout
+                                    android:id="@+id/ll_inside"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="60px"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:id="@+id/tv_inside_temp"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2"
+                                        android:textColor="@color/_666666"
+                                        android:textSize="30px" />
+
+                                    <TextView
+                                        android:id="@+id/tv_wet"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2"
+                                        android:textColor="@color/_666666"
+                                        android:textSize="30px" />
+
+                                    <TextView
+                                        android:id="@+id/tv_pm_inside"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:textColor="@color/_666666"
+                                        android:textSize="30px" />
+
+                                    <TextView
+                                        android:id="@+id/tv_tvoc"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2"
+                                        android:textColor="@color/_666666"
+                                        android:textSize="30px" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/tv_add_box"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="60px"
+                                    android:text="@string/at_add_box"
+                                    android:textColor="@color/_666666"
+                                    android:textSize="30px"
+                                    android:visibility="visible" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="53px">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="45px"
+                            android:drawableLeft="@drawable/at_shape_3px_18px45px_1478c8"
+                            android:drawablePadding="12px"
+                            android:text="@string/at_shortcut"
+                            android:textColor="@color/_333333"
+                            android:textSize="48px"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_add_shortcut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:drawablePadding="18px"
+                            android:drawableRight="@drawable/zhihui_ico_tianjiakuaijie"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="30px"
+                            android:paddingLeft="42px"
+                            android:paddingRight="42px"
+                            android:paddingTop="30px"
+                            android:text="@string/at_add"
+                            android:textColor="@color/_666666"
+                            android:textSize="42px" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="300px">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_shortcut"
+                            android:layout_width="match_parent"
+                            android:layout_height="300px" />
+
+                        <TextView
+                            android:id="@+id/tv_no_shortcut"
+                            android:layout_width="match_parent"
+                            android:layout_height="300px"
+                            android:layout_marginLeft="42px"
+                            android:layout_marginRight="42px"
+                            android:background="@drawable/at_shape_3pxeeeeee_xu"
+                            android:gravity="center"
+                            android:text="@string/at_have_no_shortcut"
+                            android:textColor="@color/_999999"
+                            android:textSize="42px"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_application"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="80px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_none"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="100px"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/bg_zhihui_wu" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="69px"
+                        android:text="@string/at_no_community_privileges_available"
+                        android:textColor="@color/_666666"
+                        android:textSize="48px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30px"
+                        android:text="@string/at_register_at_the_property_office"
+                        android:textColor="@color/_333333"
+                        android:textSize="58px"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

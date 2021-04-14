@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_appoint_result" />
+
+    <com.aliyun.ayland.widget.ATObservableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_off_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="765px"
+                    android:layout_height="765px"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="828px"
+                    android:text="访客可使用二维码开门（过期无效）"
+                    android:textColor="@color/_333333"
+                    android:textSize="36px" />
+
+                <ImageView
+                    android:id="@+id/img_off_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="165px"
+                    android:src="@drawable/hsh_pic_tpjzsb"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_off_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="540px"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="60px"
+                    android:text="@string/at_device_off_line_click_to_try_again"
+                    android:textColor="@color/_999999"
+                    android:textSize="38px"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42px"
+                android:layout_marginRight="42px"
+                android:layout_marginTop="36px"
+                android:background="@drawable/at_shape_18px_f2f7fa"
+                android:orientation="vertical"
+                android:paddingBottom="30px"
+                android:paddingLeft="42px"
+                android:paddingRight="42px">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="39px"
+                    android:textColor="@color/_333333"
+                    android:textSize="66px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="51px"
+                    android:textColor="@color/_666666"
+                    android:textSize="42px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="33px"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/at_visit_room1"
+                        android:textColor="@color/_666666"
+                        android:textSize="42px" />
+
+                    <TextView
+                        android:id="@+id/tv_visite_room"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:autoSizeMaxTextSize="42px"
+                        android:textColor="@color/_666666"
+                        android:textSize="42px" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_visite_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="33px"
+                    android:textColor="@color/_666666"
+                    android:textSize="42px" />
+
+                <TextView
+                    android:id="@+id/tv_leave_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="33px"
+                    android:textColor="@color/_666666"
+                    android:textSize="42px" />
+
+                <TextView
+                    android:id="@+id/tv_plate_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="33px"
+                    android:textColor="@color/_666666"
+                    android:textSize="42px"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_http"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:text="分享链接后，访客可录入人脸使用人脸开门\n（长按可复制链接） "
+                    android:textColor="@color/_8CA9C1"
+                    android:textSize="42px" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.aliyun.ayland.widget.ATObservableScrollView>
+</LinearLayout>

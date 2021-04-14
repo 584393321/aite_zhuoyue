@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="255px"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66px"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/_333333"
+        android:textSize="42px" />
+
+    <TextView
+        android:id="@+id/tv_eventTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15px"
+        android:textColor="@color/_999999"
+        android:textSize="36px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/_F1F1F1"
+        android:layout_height="2px"/>
+</LinearLayout>

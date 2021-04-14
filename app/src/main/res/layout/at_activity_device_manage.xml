@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/_F1F1F1"
+        android:orientation="vertical">
+
+        <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:bartext="@string/at_device_manage_share" />
+
+        <RelativeLayout
+            android:id="@+id/rl_unbind"
+            android:layout_marginTop="24px"
+            android:layout_width="match_parent"
+            android:layout_height="158px"
+            android:background="@drawable/at_selector_ffffff_e0e0e0"
+            android:paddingLeft="42px"
+            android:paddingRight="42px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/_333333"
+                android:text="@string/at_unbind_device"
+                android:textSize="42px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/jump" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/_F1F1F1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_my"
+            android:layout_width="match_parent"
+            android:layout_height="158px"
+            android:background="@drawable/at_selector_ffffff_e0e0e0"
+            android:paddingLeft="42px"
+            android:paddingRight="42px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/_333333"
+                android:text="@string/at_my_device"
+                android:textSize="42px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/jump" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/_F1F1F1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_shared"
+            android:layout_width="match_parent"
+            android:layout_height="158px"
+            android:background="@drawable/at_selector_ffffff_e0e0e0"
+            android:paddingLeft="42px"
+            android:paddingRight="42px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/_333333"
+                android:text="@string/at_shared_device"
+                android:textSize="42px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/jump" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/_F1F1F1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_accepted"
+            android:layout_width="match_parent"
+            android:layout_height="158px"
+            android:background="@drawable/at_selector_ffffff_e0e0e0"
+            android:paddingLeft="42px"
+            android:paddingRight="42px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/_333333"
+                android:text="@string/at_accepted_device"
+                android:textSize="42px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/jump" />
+        </RelativeLayout>
+    </LinearLayout>

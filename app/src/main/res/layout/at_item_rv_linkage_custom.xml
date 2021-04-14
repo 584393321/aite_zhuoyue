@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_content"
+    android:layout_width="wrap_content"
+    android:paddingLeft="12px"
+    android:paddingRight="12px"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="996px"
+        android:layout_height="333px"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="36px"
+        android:drawableLeft="@drawable/at_shape_3px_18px45px_ffffff"
+        android:drawablePadding="18px"
+        android:paddingBottom="42px"
+        android:text="晨起模式"
+        android:textColor="@color/white"
+        android:textSize="51px" />
+
+    <com.aliyun.ayland.widget.ATSwitchButton
+        android:id="@+id/switchview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12px"
+        android:padding="10px"
+        app:kswBackDrawable="@drawable/at_selector_30px_ffffff_1478c8"
+        app:kswThumbDrawable="@drawable/ksw_md_thumb"
+        app:kswThumbHeight="@dimen/ksw_md_thumb_solid_inset"
+        app:kswThumbMarginBottom="-10dp"
+        app:kswThumbMarginLeft="-10dp"
+        app:kswThumbMarginRight="-10dp"
+        app:kswThumbMarginTop="-10dp"
+        app:kswThumbRangeRatio="1.45"
+        app:kswThumbWidth="@dimen/ksw_md_thumb_ripple_size" />
+
+    <ImageView
+        android:id="@+id/img_ani"
+        android:layout_width="wrap_content"
+        android:layout_height="333px"
+        android:visibility="invisible"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="-432px"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/szwj_ld_shoudongkaiguan" />
+</RelativeLayout>

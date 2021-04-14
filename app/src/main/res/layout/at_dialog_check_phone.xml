@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="840px"
+        android:layout_height="513px"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="@drawable/at_shape_18px_ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="60px"
+            android:layout_marginLeft="75px"
+            android:textStyle="bold"
+            android:text="@string/at_phone1"
+            android:textColor="@color/_333333"
+            android:textSize="54px" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="@drawable/at_shape_12px_f5f5f5"
+            android:layout_margin="39px"
+            android:hint="@string/at_input_owner_phone"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingLeft="45px"
+            android:gravity="center_vertical"
+            android:textColor="@color/_333333"
+            android:textColorHint="@color/_DDDDDD"
+            android:textSize="54px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="315px"
+                android:layout_height="111px"
+                android:background="@drawable/at_selector_56px_3px1478c8_ffffff_eef4f8"
+                android:gravity="center"
+                android:text="@string/at_cancel"
+                android:textColor="@color/_1478C8"
+                android:textSize="45px" />
+
+            <TextView
+                android:id="@+id/tv_sure"
+                android:layout_width="315px"
+                android:layout_height="111px"
+                android:layout_marginLeft="75px"
+                android:background="@drawable/at_selector_56px_1478c8_005395"
+                android:gravity="center"
+                android:text="@string/at_sure1"
+                android:textColor="@color/white"
+                android:textSize="45px" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

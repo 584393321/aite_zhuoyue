@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="198px">
+
+    <ImageView
+        android:id="@+id/img_thumbnail"
+        android:layout_width="96px"
+        android:layout_height="96px"
+        android:layout_centerVertical="true"
+        android:src="@drawable/village_camera"
+        android:layout_marginLeft="42px"
+        android:layout_marginRight="72px" />
+
+    <TextView
+        android:id="@+id/tv_camera_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42px"
+        android:layout_toRightOf="@id/img_thumbnail"
+        android:textColor="@color/_505050"
+        android:textSize="45px" />
+
+    <TextView
+        android:id="@+id/tv_camera_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="33px"
+        android:layout_toRightOf="@id/img_thumbnail"
+        android:textColor="@color/_808080"
+        android:textSize="33px" />
+
+    <TextView
+        android:id="@+id/tv_camera_record_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="36px"
+        android:layout_marginBottom="33px"
+        android:layout_toRightOf="@id/tv_camera_start_time"
+        android:textColor="@color/_808080"
+        android:textSize="33px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="2px"
+        android:layout_marginRight="42px"
+        android:layout_marginLeft="201px"
+        android:background="@color/_F1F1F1" />
+</RelativeLayout>

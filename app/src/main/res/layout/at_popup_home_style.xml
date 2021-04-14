@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/popup_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/list_tanchuang"
+        android:layout_marginRight="24px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_add_device"
+            android:layout_width="wrap_content"
+            android:layout_height="150px"
+            android:layout_marginLeft="45px"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="30px"
+            android:drawablePadding="45px"
+            android:gravity="center"
+            android:text="@string/at_add_device"
+            android:drawableLeft="@drawable/category"
+            android:textColor="@color/white"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/tv_manage_room"
+            android:layout_width="wrap_content"
+            android:layout_height="150px"
+            android:layout_marginLeft="45px"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="30px"
+            android:drawablePadding="45px"
+            android:drawableLeft="@drawable/home_ico_sb_glfj"
+            android:gravity="center"
+            android:text="@string/at_room_manage"
+            android:textColor="@color/white"
+            android:textSize="45px" />
+    </LinearLayout>
+</RelativeLayout>

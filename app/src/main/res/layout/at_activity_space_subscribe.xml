@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="711px"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_kongjianyuyue" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlPrimaryColor="#444444">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/toolbar_padding_top">
+
+                <TextView
+                    android:id="@+id/tv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="142px"
+                    android:background="@drawable/at_selector_00ffffff_eeeeee"
+                    android:drawableLeft="@drawable/at_selector_back_white_black"
+                    android:drawablePadding="19px"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="42px"
+                    android:paddingRight="42px"
+                    android:text="@string/at_back"
+                    android:textColor="@color/white"
+                    android:textSize="42px" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="142px"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/at_visitor_record"
+                    android:textColor="@color/white"
+                    android:textSize="54px" />
+
+                <TextView
+                    android:id="@+id/tv_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="142px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="42px"
+                    android:paddingRight="42px"
+                    android:text="@string/at_subscribe_record"
+                    android:textColor="@color/white"
+                    android:textSize="54px" />
+            </RelativeLayout>
+
+            <net.lucode.hackware.magicindicator.MagicIndicator
+                android:id="@+id/magicIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="130px"
+                android:fillViewport="false"
+                android:paddingBottom="15px"
+                android:paddingTop="15px" />
+
+            <com.aliyun.ayland.widget.ATCustomViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</RelativeLayout>

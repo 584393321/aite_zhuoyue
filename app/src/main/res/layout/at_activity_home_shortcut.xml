@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_shortcut_edit" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="@color/_F5F5F5"
+        app:srlPrimaryColor="#444444">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="42px">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45px"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/at_shortcut_edit"
+                        android:textColor="@color/_333333"
+                        android:textSize="60px"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="33px"
+                        android:text="@string/at_long_press_to_drag"
+                        android:textColor="@color/_999999"
+                        android:textSize="36px" />
+                </LinearLayout>
+
+                <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+                    android:id="@+id/smrv_my_shortcut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45px"
+                    android:drawableLeft="@drawable/at_shape_3px_18px45px_1478c8"
+                    android:drawablePadding="12px"
+                    android:gravity="center_vertical"
+                    android:text="@string/at_family"
+                    android:textColor="@color/_333333"
+                    android:textSize="48px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_no_family_device"
+                    android:layout_width="match_parent"
+                    android:layout_height="300px"
+                    android:layout_marginRight="42px"
+                    android:layout_marginTop="45px"
+                    android:background="@drawable/at_shape_3pxeeeeee_xu"
+                    android:gravity="center"
+                    android:text="@string/at_have_no_family_device"
+                    android:textColor="@color/_999999"
+                    android:textSize="42px" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_family"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45px"
+                    android:drawableLeft="@drawable/at_shape_3px_18px45px_1478c8"
+                    android:drawablePadding="12px"
+                    android:gravity="center_vertical"
+                    android:text="@string/at_community"
+                    android:textColor="@color/_333333"
+                    android:textSize="48px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_no_community_device"
+                    android:layout_width="match_parent"
+                    android:layout_height="300px"
+                    android:layout_marginRight="42px"
+                    android:layout_marginTop="45px"
+                    android:background="@drawable/at_shape_3pxeeeeee_xu"
+                    android:gravity="center"
+                    android:text="@string/at_have_no_community_device"
+                    android:textColor="@color/_999999"
+                    android:textSize="42px" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_community"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45px"
+                    android:drawableLeft="@drawable/at_shape_3px_18px45px_1478c8"
+                    android:drawablePadding="12px"
+                    android:gravity="center_vertical"
+                    android:text="@string/at_linkage"
+                    android:textColor="@color/_333333"
+                    android:textSize="48px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_no_linkage"
+                    android:layout_width="match_parent"
+                    android:layout_height="300px"
+                    android:layout_marginRight="42px"
+                    android:layout_marginTop="45px"
+                    android:background="@drawable/at_shape_3pxeeeeee_xu"
+                    android:gravity="center"
+                    android:text="@string/at_have_no_linkage"
+                    android:textColor="@color/_999999"
+                    android:textSize="42px" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_linkage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

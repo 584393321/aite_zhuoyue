@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_F5F5F5"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_vehicle_access" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="@android:color/white"
+        app:srlPrimaryColor="#444444">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.aliyun.ayland.widget.ATObservableScrollView
+            android:id="@+id/observableScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42px"
+                    android:layout_marginTop="30px"
+                    android:text="@string/at_choose_vehicle"
+                    android:textColor="@color/_999999"
+                    android:textSize="38px" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_vehicle_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16px"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42px"
+                    android:layout_marginTop="70px"
+                    android:text="@string/at_choose_in_or_out"
+                    android:textColor="@color/_999999"
+                    android:textSize="38px" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="170px"
+                    android:layout_marginTop="16px"
+                    android:background="@drawable/at_selector_ffffff_cfcfcf"
+                    android:paddingLeft="42px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/at_in"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <CheckBox
+                        android:id="@+id/cb_in"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="48px"
+                        android:button="@drawable/at_selector_checkbox"
+                        android:clickable="false" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/_EEEEEE" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="170px"
+                    android:background="@drawable/at_selector_ffffff_cfcfcf"
+                    android:paddingLeft="42px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/at_out"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <CheckBox
+                        android:id="@+id/cb_out"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="48px"
+                        android:button="@drawable/at_selector_checkbox"
+                        android:clickable="false" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/_EEEEEE" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_in_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="170px"
+                    android:background="@drawable/at_selector_ffffff_cfcfcf"
+                    android:paddingLeft="42px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/at_in_out"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <CheckBox
+                        android:id="@+id/cb_in_out"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="48px"
+                        android:button="@drawable/at_selector_checkbox"
+                        android:checked="true"
+                        android:clickable="false" />
+                </RelativeLayout>
+            </LinearLayout>
+        </com.aliyun.ayland.widget.ATObservableScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

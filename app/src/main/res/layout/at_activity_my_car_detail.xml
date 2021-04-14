@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_my_car" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="45px"
+                android:background="@drawable/at_shape_12px_3pxe1e1e1"
+                android:orientation="vertical"
+                android:paddingLeft="45px"
+                android:paddingRight="78px"
+                android:paddingBottom="99px">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="75px"
+                    android:textColor="@color/_333333"
+                    android:textSize="66px"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="102px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="306px"
+                        android:layout_height="wrap_content"
+                        android:text="@string/at_id_number1"
+                        android:textColor="@color/_999999"
+                        android:textSize="42px" />
+
+                    <TextView
+                        android:id="@+id/tv_id_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="306px"
+                        android:layout_height="wrap_content"
+                        android:text="@string/at_phone3"
+                        android:textColor="@color/_999999"
+                        android:textSize="42px" />
+
+                    <TextView
+                        android:id="@+id/tv_phone_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="306px"
+                        android:layout_height="wrap_content"
+                        android:text="@string/at_car_building"
+                        android:textColor="@color/_999999"
+                        android:textSize="42px" />
+
+                    <TextView
+                        android:id="@+id/tv_car_building"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="306px"
+                        android:layout_height="wrap_content"
+                        android:text="@string/at_car_park"
+                        android:textColor="@color/_999999"
+                        android:textSize="42px" />
+
+                    <TextView
+                        android:id="@+id/tv_car_park"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="306px"
+                        android:layout_height="wrap_content"
+                        android:text="@string/at_license_number"
+                        android:textColor="@color/_999999"
+                        android:textSize="42px" />
+
+                    <TextView
+                        android:id="@+id/tv_license_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="306px"
+                        android:layout_height="wrap_content"
+                        android:text="@string/at_vehicle_model"
+                        android:textColor="@color/_999999"
+                        android:textSize="42px" />
+
+                    <TextView
+                        android:id="@+id/tv_vehicle_model"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="306px"
+                        android:layout_height="wrap_content"
+                        android:text="@string/at_vehicle_brand"
+                        android:textColor="@color/_999999"
+                        android:textSize="42px" />
+
+                    <TextView
+                        android:id="@+id/tv_vehicle_brand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="306px"
+                        android:layout_height="wrap_content"
+                        android:text="@string/at_color"
+                        android:textColor="@color/_999999"
+                        android:textSize="42px" />
+
+                    <TextView
+                        android:id="@+id/tv_vehicle_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="840px"
+                android:layout_height="144px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="45px"
+                android:background="@drawable/at_selector_150px_46bfd2_1478c8"
+                android:text="@string/at_check_my_license"
+                android:textColor="@color/white"
+                android:textSize="51px"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

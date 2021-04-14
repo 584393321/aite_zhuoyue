@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="45px">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45px"
+        android:textColor="@color/_333333"
+        android:textSize="48px" />
+
+    <TextView
+        android:id="@+id/tv_create_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:textColor="@color/_666666"
+        android:textSize="36px" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:textColor="@color/_666666"
+        android:textSize="36px" />
+
+    <TextView
+        android:id="@+id/tv_visite_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:textColor="@color/_666666"
+        android:textSize="36px" />
+
+    <TextView
+        android:id="@+id/tv_visite_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:textColor="@color/_666666"
+        android:textSize="36px" />
+
+    <TextView
+        android:id="@+id/tv_trip_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:textColor="@color/_666666"
+        android:textSize="36px" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_marginTop="45px"
+        android:layout_marginRight="45px"
+        android:background="@color/_F1F1F1" />
+</LinearLayout>

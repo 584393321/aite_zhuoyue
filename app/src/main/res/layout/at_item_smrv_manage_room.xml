@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="158px"
+    android:background="@drawable/at_selector_ffffff_e0e0e0"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/img_delete"
+        android:layout_width="72px"
+        android:layout_height="72px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="42px"
+        android:src="@drawable/delete" />
+
+    <TextView
+        android:id="@+id/tv_room_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/_333333"
+        android:layout_marginLeft="33px"
+        android:layout_toRightOf="@id/img_delete"
+        android:textSize="48px" />
+
+    <ImageView
+        android:id="@+id/img_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60px"
+        android:src="@drawable/common_ico_yidong" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="147px"
+        android:background="@color/_F1F1F1"
+        android:layout_height="2px"/>
+</RelativeLayout>

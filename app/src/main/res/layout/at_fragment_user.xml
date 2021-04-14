@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="642px"
+        android:orientation="vertical"
+        android:background="@color/_1478C8" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45px"
+            android:text="@string/at_mine"
+            android:textStyle="bold"
+            android:layout_marginTop="105px"
+            android:textColor="@color/white"
+            android:textSize="72px" />
+
+        <LinearLayout
+            android:id="@+id/ll_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42px"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.aliyun.ayland.widget.ATMyCircleImageView
+                android:id="@+id/img_user"
+                android:layout_width="180px"
+                android:layout_height="180px"
+                android:src="@drawable/pho_s_mine_touxiang"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="36px"
+                android:textColor="@color/white"
+                android:textSize="48px" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_user"
+        android:layout_width="match_parent"
+        android:layout_marginTop="54px"
+        android:layout_height="180px"
+        android:background="@drawable/at_selector_00ffffff_cfcfcf">
+
+        <ImageView
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="78px"
+            android:src="@drawable/icon_s_guanyu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="222px"
+            android:textSize="45px"
+            android:text="个人资料"
+            android:textColor="@color/_333333" />
+
+        <ImageView
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="48px"
+            android:src="@drawable/btn_jump_h" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_setting"
+        android:layout_width="match_parent"
+        android:layout_height="180px"
+        android:background="@drawable/at_selector_00ffffff_cfcfcf">
+
+        <ImageView
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="78px"
+            android:src="@drawable/icon_s_shezhi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="222px"
+            android:textSize="45px"
+            android:text="@string/at_setting"
+            android:textColor="@color/_333333" />
+
+        <ImageView
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="48px"
+            android:src="@drawable/btn_jump_h" />
+    </RelativeLayout>
+</LinearLayout>

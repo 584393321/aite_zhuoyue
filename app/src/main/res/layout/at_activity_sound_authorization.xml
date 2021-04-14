@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_F5F5F5"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_sound_authorization" />
+
+    <RelativeLayout
+        android:id="@+id/rl_tmall"
+        android:layout_width="match_parent"
+        android:layout_height="168px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/at_selector_ffffff_e0e0e0"
+        android:paddingLeft="42px"
+        android:paddingRight="40px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/at_tmall_wizard_authorization"
+            android:textColor="@color/_333333"
+            android:textSize="45px" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_lookover_gray" />
+    </RelativeLayout>
+</LinearLayout>
